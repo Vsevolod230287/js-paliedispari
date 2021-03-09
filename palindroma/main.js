@@ -5,13 +5,15 @@
 var parola = prompt("Dammi una parola: ");
 
 function palindroma(word) {
-  var str;
-  for (i = word.length; i >= 0; i--) {
-    str += word[i];
+  var string = "";
+
+  for (i = word.length - 1; i >= 0; i--) {
+    string += word[i];
   }
-   console.log(str);
-  if(word == str) {
-    console.log('La parola ' + word + ' è Palindroma!');
+  console.log(string);
+
+  if (word == string) {
+    console.log("La parola " + word + " è Palindroma!");
   } else {
     console.log("La parola " + word + " non è Palindroma!");
   }
